@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
+ 
 }
 
 body {
@@ -10,8 +11,37 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url(../img/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
 }
 
 .container {
   margin: 0 auto;
+}
+
+@media only screen 
+and (min-device-width : 320px)
+and (min-device-width : 768px) 
+and (min-device-width : 1024px)
+and (max-device-height: 1366px)
+{ 
+body{
+
+  -webkit-box-align: center;
+  -webkit-text-size-adjust: 100%;
+  -ms-flex-align: center;
+  background-image: url(../img/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat,repeat;
+  background-attachment: fixed;
+
+  
+}
+.container{
+  margin-bottom :165px;
+
+}
+
 }
