@@ -4,7 +4,7 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 
 const config = {
-  birthdate: 'OCT 11, 2020',
+  birthdate: 'APRIL 26, 2020',
   name: 'Rainbow❤️'
 };
 
@@ -29,7 +29,7 @@ const second = 1000,
 let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
 x = setInterval(function() {
   let now = new Date().getTime(),
-    distance = countDown - now;
+    distance = now - countDown;
 
   document.getElementById('day').innerText = Math.floor(distance / day);
   document.getElementById('hour').innerText = Math.floor(
