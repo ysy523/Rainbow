@@ -30,7 +30,7 @@ let countDown = new Date(`${config.birthdate} 00:00:00`).getTime();
 x = setInterval(function() {
   let now = new Date().getTime(),
     distance = now - countDown;
-
+    ++distance;
   document.getElementById('day').innerText = Math.floor(distance / day);
   document.getElementById('hour').innerText = Math.floor(
     (distance % day) / hour
